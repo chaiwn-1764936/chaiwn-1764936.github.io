@@ -2,6 +2,12 @@
 <html>
 	<head>
 		<title> Taylor's Website </title>
+		<style>
+		table, th, td {
+			padding: 10px;
+			border: 2px solid black;
+		}
+		</style>
 	</head>
 	<body>
 		<h1>Nonthakit Chaiwong</h1>
@@ -23,5 +29,36 @@
 		<a href="https://trbbbbb.com/snow-fox-wallpaper.html/amazing-fox-photos-pic-wsw3033446">
 			<img src="https://trbbbbb.com/wp-content/uploads/data/2018/1/6/amazing-fox-photos-PIC-WSW3033446.jpg" title="white fox" style="width:100px;height:100px;margin:5px">
 		</a>
+		<table>
+			<tr>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+		</table>
+		<button type="button" onclick="clickCount()">Click Me!</button><br>
+		<div id="buttonClick"></div><br><br>
+		<script>
+			var buttonCount = 0;
+			function clickCount() {
+				buttonCount ++;
+				document.getElementById("buttonClick").innerHTML = 	"You've clicked for " + buttonCount + " time(s)!";
+			}
+		</script>
 	</body>
 </html>
