@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="anExternal.css">
+		<title> Some Css </title>
+	</head>
+	<body>
+		<p id="paragraph1">This is first paragraph</p>
+		<p id="paragraph2">This is second paragraph</p>
+		<img src="https://trbbbbb.com/wp-content/uploads/data/2018/1/6/amazing-fox-photos-PIC-WSW3033446.jpg" title="white fox"">
+		<img src="https://files.brightside.me/files/news/part_13/138155/1268905-KOBbWcCj-650-a6c909615b-1484647778.jpg" title="silly husky"><br>
+		<img class="small_img" src="https://trbbbbb.com/wp-content/uploads/data/2018/1/6/amazing-fox-photos-PIC-WSW3033446.jpg" title="white fox"">
+		<img class="small_img" src="https://files.brightside.me/files/news/part_13/138155/1268905-KOBbWcCj-650-a6c909615b-1484647778.jpg" title="silly husky"><br>
+		<div id="button_game">
+			<button type="button" onclick="clickCount()">Click Me Ver.2!</button><br><br>
+			<div id="button_click"></div>
+		</div>
+		<div class="text_in_image">
+			<img class="" src="http://i0.kym-cdn.com/photos/images/original/000/581/296/c09.jpg" title="such doge">
+			<div class="center">Such Doge, Much Wow</div>
+		</div>
+		<script>
+			var buttonCount = 0;
+			var rainbow=["red","orange","yellow","green","blue","indigo","purple"];
+			function clickCount() {
+				buttonCount ++;
+				document.getElementById("button_click").innerHTML = 	"You've clicked for " + buttonCount + " time(s)!";
+				document.getElementById("button_game").style.borderColor = rainbow[buttonCount%7];
+			}
+		</script>
+	</body>
+</html>
